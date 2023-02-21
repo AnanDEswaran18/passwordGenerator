@@ -16,20 +16,20 @@ public class PasswordGenerator {
         int nrSymbols = scanner.nextInt();
         System.out.print("How many numbers would you like? ");
         int nrNumbers = scanner.nextInt();
-
-//         String easyPassword = "";
-//         Random rand = new Random();
-//         for (int i = 0; i < nrLetters; i++) {
-//             easyPassword += (char)(rand.nextInt(26) + 'a');
-//         }
-//         for (int i = 0; i < nrSymbols; i++) {
-//             easyPassword += "!@#$%^&*()_+-=[]{}|;':\",./<>?".charAt(rand.nextInt(23));
-//         }
-//         for (int i = 0; i < nrNumbers; i++) {
-//             easyPassword += rand.nextInt(10);
-//         }
-//         System.out.println("Easy Password: " + easyPassword);
-        
+---------------------------------------------------------------------------------------------------------------------
+        String easyPassword = "";
+        Random rand = new Random();
+        for (int i = 0; i < nrLetters; i++) {
+            easyPassword += (char)(rand.nextInt(26) + 'a');
+        }
+        for (int i = 0; i < nrSymbols; i++) {
+            easyPassword += "!@#$%^&*()_+-=[]{}|;':\",./<>?".charAt(rand.nextInt(23));
+        }
+        for (int i = 0; i < nrNumbers; i++) {
+            easyPassword += rand.nextInt(10);
+        }
+        System.out.println("Easy Password: " + easyPassword);
+---------------------------------------------------------------------------------------------------------------------+        
         List<Character> passwordList = new ArrayList<Character>();
         for (int i = 0; i < nrLetters; i++) {
             passwordList.add((char)(rand.nextInt(26) + 'a'));
